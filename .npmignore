@@ -1,0 +1,19 @@
+# Bower Config
+bower.json
+
+examples
+salesforce-ux
+sass
+scripts
+/site/
+stylus
+
+# Components Directory
+src/
+
+# Gulp
+tasks/
+gulpfile.js
+
+# npmignore
+.npmignore

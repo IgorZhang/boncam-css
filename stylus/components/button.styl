@@ -1,0 +1,357 @@
+$white = #FFFFFF;
+// 蓝色基本色
+$BLUE = #0070d2;
+
+// 红色基本色
+$RED = #c23934;
+
+// 绿色基本色
+$GREEN = #4bca81;
+
+// 黄色基本色
+$YELLOW = #ffb75d;
+
+// 灰色
+$GREY = #d8dde6;
+$transparent = transparent;
+
+// 灰色
+$grey_1     = #F4F6F9;
+$grey_4     = #F0F8FC;
+$grey_10    = #F7F9FB;
+$grey_7     = #F5F6F7;
+$grey_2     = #EEF1F6;
+$grey_3     = #D8DDE6;
+$grey_6     = #E0E5EE;
+$grey_8     = #7E8C99;
+$grey_9     = #686C70;
+//
+//// 颜色值
+$blue_1       = #0070D2;
+$blue_2       = #5bc0dc;
+$blue_3       = #54698d;
+$green        = #4BCA81;
+$red          = #C23934;
+$yellow       = #ffb75d;
+$darkgreen    = #037040;
+
+// 主题色 PRIMARY SUCCESS INFO WARNING ERROR  BLUE
+$primary    = $blue_1;
+$success    = $green;
+$danger     = $red;
+$warning    = $yellow;
+$info       = $blue_2;
+$blue       = $blue_3;
+
+// Border
+$button-border-width = $border-width-1;
+$border-radius-medium = 0.25rem;
+
+// Color
+// Default
+$button-color-background-default        = $white;
+$button-color-background-default-hover  = $grey-2;
+$button-color-background-default-active = $grey-3;
+
+$button-color-text-default        = $primary;
+$button-color-text-default-hover  = $blue-7;
+$button-color-text-default-active = $blue-7;
+
+$button-color-border-default = $grey-6;
+
+// Box Shadow
+$button-shadow-default-focus = 0 0 3px $blue-5;
+
+// Link
+$button-color-background-link        = $white;
+$button-color-background-link-hover  = $white;
+$button-color-background-link-active = $white;
+
+$button-color-text-link        = $primary;
+$button-color-text-link-hover  = $blue-7;
+$button-color-text-link-active = $blue-8;
+
+$button-color-border-link = $transparent;
+
+// Spacing
+$button-icon-square = 2rem;
+
+// line-height
+$button-line-height-default = 1.42857143;
+$button-line-height-size    = 1.5;
+
+$element = 'btn';
+
+.{$element} {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.25rem;
+  background-color: $button-color-background-default;
+  color: $button-color-text-default;
+  border: $button-border-width solid;
+  border-color: $button-color-border-default;
+  border-radius: $border-radius-medium;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+  user-select: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-image: none;
+
+  &:hover,
+  &:focus {
+    color: $button-color-text-default-hover;
+    background-color: $button-color-background-default-hover;
+  }
+
+  &:focus {
+    box-shadow: $button-shadow-default-focus;
+    outline: 0;
+  }
+
+  &.active,
+  &:active {
+    color: $button-color-text-default-active;
+    background-color: $button-color-background-default-active;
+    box-shadow: $button-shadow-default-focus;
+    outline: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+
+}
+
+
+.{$element}.{$element}-primary {
+  background-color: #0070d2;
+  border-color: #0070d2;
+  color: #fff;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color:#fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #005fb3;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px #0070d2;
+  }
+
+  &:active {
+    background-color: #00549d;
+    border-color: #00549d;
+    outline: 0;
+    box-shadow: 0 0 3px #0070d2;
+  }
+  &[ disabled ] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:visited,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: #0070d2;
+      color: #fff;
+      border-color: #0070d2;
+    }
+
+  }
+}
+
+.{$element}.{$element}-success {
+  background-color: #4bca81;
+  border-color: #4bca81;
+  color: #fff;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #36b66c;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px #4bca81;
+  }
+
+  &:active {
+    background-color: #2fa05f;
+    border-color: #2fa05f;
+    outline: 0;
+    box-shadow: 0 0 3px #4bca81;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:visited,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: #4bca81;
+      color: #fff;
+      border-color: #4bca81;
+    }
+  }
+}
+
+
+.{$element}.{$element}-danger {
+  background-color: #c23934;
+  border-color: #c23934;
+  color: #fff;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #a5302c;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px #c23934;
+  }
+
+  &:active {
+    background-color: #912b27;
+    border-color: #912b27;
+    outline: 0;
+    box-shadow: 0 0 3px #c23934;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:visited,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: #c23934;
+      color: #fff;
+      border-color: #c23934;
+    }
+  }
+}
+
+.{$element}.{$element}-warning {
+  background-color: #ffb75d;
+  border-color: #ffb75d;
+  color: #fff;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ffa029;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px #ffb75d;
+  }
+
+  &:active {
+    background-color: #ff9006;
+    border-color: #ff9006;
+    outline: 0;
+    box-shadow: 0 0 3px #ffb75d;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:visited,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: #ffb75d;
+      color: #fff;
+      border-color: #ffb75d;
+    }
+  }
+}
+
+
+.{$element}.{$element}-info {
+  background-color: #78c0ff;
+  border-color: #78c0ff;
+  color: #fff;
+
+  &:link,
+  &:visited,
+  &:active,
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #40a6ff;
+  }
+
+  &:focus {
+    box-shadow: 0 0 3px #78c0ff;
+  }
+
+  &:active {
+    background-color: #1a94ff;
+    border-color: #1a94ff;
+    outline: 0;
+    box-shadow: 0 0 3px #78c0ff;
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    box-shadow: none;
+
+    &:visited,
+    &:active,
+    &:visited,
+    &:focus {
+      background-color: #78c0ff;
+      color: #fff;
+      border-color: #78c0ff;
+    }
+  }
+}

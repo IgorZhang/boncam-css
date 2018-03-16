@@ -1,0 +1,14 @@
+# 0.1.14
+- 支持样式 BEM 的写法及编译
+- Tabs 
+  - 修复竖向 Tabs 内容部分不显示及样式问题
+- Accordion
+  - 修复竖向打开的 Accordion 边框问题
+- Table
+  - 新增了拖拽效果样式
+- Process
+  - 新增步骤页标识处文字颜色和hover样式
+- Button
+  - 修改disabled状态时button颜色较浅问题  
+- Menu
+  - 给menu菜单添加最小宽度设置，默认最小宽度为6rem    

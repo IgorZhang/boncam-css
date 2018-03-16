@@ -1,0 +1,60 @@
+{
+  "name": "epm-ui-css",
+  "version": "0.5.0-alpha.1",
+  "description": "BON Corporation EPM User Interface stylesheets",
+  "keywords": [
+    "BON Corporation",
+    "EPM"
+  ],
+  "homepage": "http://www.bonc.com.cn",
+  "bugs": {
+    "url": "https://code.bonc.com.cn/bonc-ux/epm-ui-css/issues"
+  },
+  "license": "SEE LICENSE IN <LICENSE>",
+  "author": "BON Corporation R&D Center",
+  "main": "dist/css/epm-ui.css",
+  "repository": {
+    "type": "git",
+    "url": "https://code.bonc.com.cn/bonc-ux/epm-ui-css.git"
+  },
+  "scripts": {
+    "start": "gulp dist",
+    "build": "gulp build",
+    "watch": "gulp build && gulp watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.7.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-header": "^1.8.8",
+    "gulp-if": "^2.0.2",
+    "gulp-postcss": "^6.3.0",
+    "gulp-prompt": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-stylus": "^2.6.0",
+    "highlight": "^0.2.4",
+    "marked": "^0.3.6",
+    "morgan": "^1.8.1",
+    "nib": "^1.1.2",
+    "normalize.css": "^7.0.0",
+    "ordered-merge-stream": "^1.0.0",
+    "postcss-remtopx": "^1.0.0",
+    "run-sequence": "^1.2.2",
+    "serve-favicon": "~2.3.2",
+    "yamljs": "^0.3.0"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://code.bonc.com.cn/nexus/repository/npm-internal/"
+  },
+  "browserslist": [
+    "> 5%",
+    "last 5 versions",
+    "Explorer >= 8"
+  ]
+}
